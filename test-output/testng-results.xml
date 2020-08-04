@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-08-05T00:42:39 IST" name="FlightsBooking" finished-at="2020-08-05T00:42:42 IST" duration-ms="2457">
+    <groups>
+    </groups>
+    <test started-at="2020-08-05T00:42:39 IST" name="FlightsBookingTest" finished-at="2020-08-05T00:42:42 IST" duration-ms="2457">
+      <class name="com.app.base.BaseClass">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.app.base.BaseClass@70be0a2b]" started-at="2020-08-05T00:42:39 IST" name="setUp" finished-at="2020-08-05T00:42:42 IST" duration-ms="2344" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create a new remote session. Original error: Unsupported or unrecognized SSL message
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S3IJ0AS', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: driver.version: AppiumDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Original error: Unsupported or unrecognized SSL message
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S3IJ0AS', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: driver.version: AppiumDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:88)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
+at com.app.base.BaseClass.setUp(BaseClass.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+... 36 more
+Caused by: javax.net.ssl.SSLException: Unsupported or unrecognized SSL message
+at java.base/sun.security.ssl.SSLSocketInputRecord.handleUnknownRecord(SSLSocketInputRecord.java:439)
+at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:184)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:108)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1180)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1091)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:402)
+at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.java:318)
+at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.java:282)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:167)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+... 41 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.app.base.BaseClass@70be0a2b]" started-at="2020-08-05T00:42:42 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1596568362407" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.app.base.BaseClass -->
+    </test> <!-- FlightsBookingTest -->
+  </suite> <!-- FlightsBooking -->
+</testng-results>
